@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 8vh;
+  font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 6vh;
+  font-weight: 400;
+}
+
+p {
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+
+.title-text {
+  font-size: 5.26vh;
+  color: rgb(21, 21, 21);
+  font-weight: 700;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.338);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0px 0px rgba(255, 255, 255, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent);
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.8),
+      transparent,
+      rgba(255, 255, 255, 0.488));
+}
+
+.rating-text {
+  font-size: 8vh;
+  font-weight: 700;
+}
+
+.card-para {
+  color: rgb(56, 56, 56);
+  font-size: 2.34vh;
+}
+
+.card-heder {
+  font-size: 3.6vh;
+  font-weight: 600;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.footer-para {
+  color: rgba(255, 255, 255, 0.789);
+  font-size: 3.14vh;
+  font-weight: 400;
+}
+
+.footer-title-text {
+  font-size: 5.26vh;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+
+  h2 {
+    font-size: 12vw;
+    font-weight: 600;
+  }
+
+  h1,
+  h3 {
+    font-size: 16.56vw;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 4vw;
+    font-weight: 400;
+  }
+
+  .rating-text {
+    font-size: 8vw;
+    font-weight: 700;
+  }
+
+  .title-text {
+    font-size: 6.56vw;
+    color: rgb(21, 21, 21);
+    font-weight: 700;
+  }
+
+  .footer-para {
+    font-size: 4.14vw;
+    font-weight: 400;
+  }
+
+  .footer-title-text {
+    font-size: 5.26vw;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+  }
+}
