@@ -31,6 +31,13 @@ Follow these steps to run the project locally:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/DevilPaddy/codebaby.git
+```
+```bash
 cd codebaby
+```
+```bash
 npm install
+```
+```bash
 npm run dev
+```
